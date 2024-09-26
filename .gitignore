@@ -1,0 +1,13 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+dist/
+node_modules/
+.pnp/
+.pnp.js

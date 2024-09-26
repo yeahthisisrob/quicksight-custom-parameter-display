@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickSight Parameters</title>
+    <style>
+        body {
+            font-family: "Amazon Ember", Arial, sans-serif;
+            margin: 16px;
+            background-color: #f8f9fa;
+        }
+        .pill-container {
+            margin: 16px 0;
+        }
+        .wrap-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .pill-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .pill-group-label {
+            font-weight: bold;
+            color: #555555;
+            margin-right: 6px;
+            font-size: 14px;
+        }
+        .pill {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: #0073bb;
+            color: white;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            white-space: nowrap;
+        }
+        .overflow-pill {
+            background-color: #6c757d;
+        }
+        table.legacy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        table.legacy-table td, table.legacy-table th {
+            padding: 8px;
+            border: 1px solid #edecf3;
+            text-align: left;
+        }
+        table.legacy-table td:first-child {
+            width: 20%; /* Make the first column narrower */
+        }
+        table.legacy-table tr:nth-child(even) {
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+<body>
+    <div id="pill-container" class="pill-container"></div>
+    <script src="index.js"></script>
+</body>
+</html>
