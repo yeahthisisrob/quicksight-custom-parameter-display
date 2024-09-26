@@ -22,7 +22,7 @@ export class QuicksightCustomParameterDisplayStack extends cdk.Stack {
     // Create a CloudFront distribution to serve the S3 bucket content
     const distribution = new cloudfront.Distribution(this, 'QuicksightCustomParameterDisplayDist', {
       defaultBehavior: {
-        origin: new origins.S3Origin(bucket), // Changed to S3Origin
+        origin: new origins.S3StaticWebsiteOrigin(bucket), // Use S3StaticWebsiteOrigin instead of S3Origin
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       },
     });
